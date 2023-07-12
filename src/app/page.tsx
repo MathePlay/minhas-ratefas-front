@@ -1,6 +1,6 @@
 "use client"
 import {tarefas} from  '@/data/data'
-// import Header from './components/Header'
+import Header from './components/Header'
 import BarraAdicionar from './components/BarraAdicionar'
 import Tarefa from './components/Tarefa'
 // import { useEffect, useState, } from 'react'
@@ -22,17 +22,17 @@ export default function Home() {
 
 
   return (
-    <div className='h-screen flex bg-zinc-800 text-zinc-300 flex-col'>
-      {/* <Header /> */}
+    <div className='h-full flex bg-zinc-800 text-zinc-300 flex-col'>
+      <Header />
 
-      <div className="flex flex-1">
+      <div className="flex flex-1 pt-16 ">
 
-        <aside className="w-60 bg-zinc-700 h-full">
+        <aside className="fixed flex h-screen w-60 bg-zinc-700">
           <h1>Sidebar</h1>
         </aside>
 
 
-        <main className='flex flex-1 w-full p-7 justify-center item-center flex-col'>
+        <main className='flex flex-1 w-full p-7 justify-center item-center flex-col ml-60'>
           <div className='flex justify-center h-20 w-full'>
             <BarraAdicionar />
           </div>
