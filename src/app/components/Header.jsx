@@ -1,4 +1,5 @@
-import { Menu, Search } from 'lucide-react'
+
+import { Menu, Search} from 'lucide-react'
 
 export default function Header() {
     return (

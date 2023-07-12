@@ -3,6 +3,7 @@ import {tarefas} from  '@/data/data'
 import Header from './components/Header'
 import BarraAdicionar from './components/BarraAdicionar'
 import Tarefa from './components/Tarefa'
+import Sidebar  from './components/Sidebar'
 // import { useEffect, useState, } from 'react'
 
 export default function Home() {
@@ -25,14 +26,11 @@ export default function Home() {
     <div className='h-full flex bg-zinc-800 text-zinc-300 flex-col'>
       <Header />
 
-      <div className="flex flex-1 pt-16 ">
+      <div className="flex flex-1 mt-16 ">
 
-        <aside className="fixed flex h-screen w-60 bg-zinc-700">
-          <h1>Sidebar</h1>
-        </aside>
+        <Sidebar/>
 
-
-        <main className='flex flex-1 w-full p-7 justify-center item-center flex-col ml-60'>
+        <main className='flex flex-1 w-full p-7 justify-center item-center flex-col ml-64'>
           <div className='flex justify-center h-20 w-full'>
             <BarraAdicionar />
           </div>
