@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/Tarefa.jsx", "src/app/components/BarraAdicionar.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/Linhas.jsx", "src/app/components/BarraAdicionar.jsx"],
   "exclude": ["node_modules"]
 }

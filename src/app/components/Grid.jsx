@@ -1,7 +1,18 @@
-export default function Tarefa(props) {
+import {tarefas} from  '@/data/data'
+
+export default function Grid(){
+    return (
+        <div className='grid grid-cols-3 gap-7'>
+              {tarefas.map((item, i) => (
+                <Tarefa key={i} nome={item.nome} prioridade={item.prioridade} />
+              ))}
+            </div>
+    )
+}
+
+function Tarefa(props) {
     let background = ""
     let border = ""
-
 
     if (props.prioridade === "URGENTE") {
         background = "bg-red-700"
@@ -18,11 +29,7 @@ export default function Tarefa(props) {
     }
 
     return (
-        <div className={`
-            flex items-center flex-col border-2 
-            ${border || "border-zinc-700"} 
-            h-32  rounded-3xl overflow-hidden
-        `}>
+        <div className={` flex items-center flex-col border-2  ${border || "border-zinc-700"} h-32  rounded-3xl overflow-hidden`}>
             <div className="flex-1 py-2 px-3 w-full text-xl mx-auto">
                 <h1>{props.nome}</h1>
             </div>
